@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body style="background-color: rgb(245, 242, 241);">
+    <h1 style="text-align: center;">Event Registration Form</h1>
+    <form>
+        <!-- Personal Details Section -->
+        <fieldset style="border-radius: 20px;">
+            <h3>Personal Details</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="profile_pic">Profile Picture:</label>
+            <input type="file" id="profile_pic" name="profile_pic"><br><br>
+        </fieldset><br><br><br><br>
+
+        <!-- Contact Preferences Section -->
+        <fieldset style="border-radius: 20px;">
+            <h3>Contact Preferences</h3>
+            <label>How would you like to be contacted?</label><br>
+            <input type="checkbox" id="email_1" name="contact" value="email">
+            <label for="email_1">Email</label><br>
+            <input type="checkbox" id="phone" name="contact" value="phone">
+            <label for="phone">Phone</label><br>
+            <input type="checkbox" id="sms" name="contact" value="sms">
+            <label for="sms">SMS</label><br><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="india">India </option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="comments"> Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+
+    <!-- Embedded Frame for Event Rules -->
+    <h2>Event Rules</h2>
+    <iframe style="border-radius: 20px;" src="Form_event_rules.html" width="600" height="400" title="Event Rules">
+        <noframes>
+            <p>Your browser does not support iframes. Please view the <a href="event_rules.html">event rules</a>.</p>
+        </noframes>
+    </iframe>
+
+    <!-- Link to Send an Email -->
+    <p>If you have any questions, feel free to <a href="abc.def@gmail.com">contact us</a>.</p>
+</body>
+</html>
